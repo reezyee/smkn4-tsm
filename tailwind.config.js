@@ -12,8 +12,9 @@ module.exports = {
     extend: {
       fontFamily: {
         titillium: ["'Titillium Web'", "serif"],
+        bb: ["'Birthstone Bounce'", "serif"]
       },
     },
   },
   plugins: [],
-}
+};

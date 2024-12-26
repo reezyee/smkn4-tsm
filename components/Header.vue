@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white text-black max-w-screen font-titillium border-b paddingX flex justify-between">
+    <div class="bg-[#fffeff] text-black max-w-screen z-20 font-titillium border-b paddingX flex justify-between">
         <NuxtLink to="/" class="flex items-center gap-2">
             <img src="../assets/img/logo.png" alt="Logo SMKN 4 Tasikmalaya" class="w-14">
             <p class="font-bold text-[2rem] text-[#11224E]">SMKN 4 Tasikmalaya</p>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="Navbar bg-white text-black paddingX shadow-md font-titillium flex justify-end gap-7 sticky top-0">
+    <div class="Navbar bg-[#fffeff] text-black z-20 paddingX shadow-md font-titillium flex justify-end gap-7 sticky top-0">
         <NuxtLink to="/">
             <p class="">Beranda</p>
         </NuxtLink>
