@@ -25,7 +25,7 @@
           <a title="Nomor Telepon Sekolah" href="tel:+62265312059" class="hover:text-[#2c52b3]">+62-265-312-059</a>
         </div>
         <div class="flex justify-center items-center gap-1 border-l-2 border-[#11224e] ps-5">
-          <Icon name="ion:ios-telephone" size="1.5rem" />
+          <Icon name="material-symbols:mail" size="1.5rem" />
           <a title="Email Sekolah" href="mailto:info@smkn4-tsm.sch.id" class="hover:text-[#2c52b3]">info@smkn4-tsm.sch.id</a>
         </div>
       </div>
