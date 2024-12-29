@@ -17,3 +17,22 @@
 .paddingXY {
     padding: 90px 90px;
 }
+
+.marque--inner {
+    position: relative;
+    left: 150px;
+    animation: Loops 5s linear infinite;
+    transform: translate3d(-25%, 0, 0);
+    transition: opacity .55s;
+}
+
+@keyframes Loops {
+    0% {
+        transform: matrix(1, 0, 0, 1, 1, 0);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: matrix(1, 0, 0, 1, -260, 0);
+        opacity: 1;
+    }    
+}
