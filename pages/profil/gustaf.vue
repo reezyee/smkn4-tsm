@@ -219,7 +219,7 @@ const loadMore = () => {
   teachers.value = [...db_teachers.value.slice(0, limitEnd.value)];
 
   // ubah limitStart dan limitEnd untuk data seterusnya
-  // limitStart.value = limitEnd.value - 5;
+  limitStart.value = limitEnd.value - 5;
 };
 
 // fungsi memuat data baru dari db_teachers
