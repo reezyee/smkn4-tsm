@@ -44,7 +44,7 @@
             Lihat Lainnya
           </button>
           <button
-            v-if="classes.length > 5"
+            v-if="classes.length > 6"
             @click="loadLess"
             class="bg-[#11224e] rounded-md py-2 px-4 text-white"
           >
@@ -202,13 +202,13 @@ const db_classes = ref([
   { id: 24, name: "Ruang Kelas 24", src: r24 },
 ]);
 
-// ambil 5 data classes awal
-const classes = ref([...db_classes.value.slice(0, 5)]);
+// ambil 6 data classes awal
+const classes = ref([...db_classes.value.slice(0, 6)]);
 const limitStart = ref(classes.value.length); // batas awal pengambilan data
-const limitEnd = ref(limitStart.value + 5); // batas akhir pengambilan data
+const limitEnd = ref(limitStart.value + 6); // batas akhir pengambilan data
 // fungsi memuat data baru dari db_classes
 const loadMore = () => {
-  // data lama di classes digabung dengan 5 data dari db_classes selanjutnya
+  // data lama di classes digabung dengan 6 data dari db_classes selanjutnya
   classes.value = [
     ...classes.value,
     ...db_classes.value.slice(limitStart.value, limitEnd.value),
@@ -216,12 +216,12 @@ const loadMore = () => {
 
   // ubah limitStart dan limitEnd untuk data seterusnya
   limitStart.value = limitEnd.value;
-  limitEnd.value = limitEnd.value + 5;
+  limitEnd.value = limitEnd.value + 6;
 };
 // Fungsi mengurangi data dari classes
 const loadLess = () => {
-  if (limitEnd.value > 5) {
-    limitEnd.value -= 5;
+  if (limitEnd.value > 6) {
+    limitEnd.value -= 6;
     classes.value = [...db_classes.value.slice(0, limitEnd.value)];
   }
 };
