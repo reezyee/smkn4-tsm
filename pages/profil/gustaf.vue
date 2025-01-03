@@ -209,7 +209,7 @@ const db_teachers = ref([
 
 // ambil 5 data teachers awal
 const teachers = ref([...db_teachers.value.slice(0, 5)]);
-// const limitStart = ref(0); // batas awal pengambilan data
+const limitStart = ref(0); // batas awal pengambilan data
 const limitEnd = ref(5); // batas akhir pengambilan data
 
 // fungsi memuat data baru dari db_teachers
@@ -226,10 +226,10 @@ const loadMore = () => {
 const loadLess = () => {
   // data lama di teachers digabung dengan 5 data dari db_teachers sebelumnya
   if (limitStart.value >= 5) {
-    limitStart.value -= 5;
+    // limitStart.value -= 5;
     limitEnd.value -= 5;
     teachers.value = [
-      ...db_teachers.value.slice(limitStart.value, limitEnd.value),
+      ...db_teachers.value.slice(0, limitEnd.value),
     ];
   }
 };
