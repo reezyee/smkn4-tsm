@@ -36,8 +36,8 @@
                 </p>
                 <ul class="flex flex-col gap-5 justify-center">
                     <li class="text-[#828da3] hover:text-white"><a title="Kemendikbubd" href="">Sambutan Kepala Sekolah</a></li>
-                    <li class="text-[#828da3] hover:text-white"><a title="Direktorat PSMK"
-                            href="">Alumni</a></li>
+                    <!-- <li class="text-[#828da3] hover:text-white"><a title="Direktorat PSMK"
+                            href="">Alumni</a></li> -->
                     <li class="text-[#828da3] hover:text-white"><a title="Dinas Provinsi Jawa Barat"
                             href="http://">Disdik Jabar</a></li>
                     <li class="text-[#828da3] hover:text-white"><a title="" href="http://disdik.jabarprov.go.id"></a>

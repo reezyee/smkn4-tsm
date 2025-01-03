@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@nuxt/icon": "^1.10.3",
+    "chart.js": "^4.4.7",
     "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",
     "tailwindcss": "^3.4.17",
     "vue": "latest",
+    "vue-chartjs": "^5.3.2",
     "vue-router": "latest"
   }
 }
